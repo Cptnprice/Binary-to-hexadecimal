@@ -2,7 +2,7 @@
 # My (quite old) implementation of converting binary numbers to base16 without built-in function **hex**
 
 
-def bin_hex(binarystring):
+```pythondef bin_hex(binarystring):
     d = {'10':'a','11':'b','12':'c','13':'d','14':'e','15':'f'}
     binarystring = list(reversed(binarystring))
     l = []
@@ -30,3 +30,4 @@ def bin_hex(binarystring):
     if l3.count('0') != len(l3):
             l3 = l3.lstrip('0')
     return l3
+```
